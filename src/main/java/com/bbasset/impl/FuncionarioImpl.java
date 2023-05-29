@@ -1,4 +1,7 @@
-package com.bbasset;
+package com.bbasset.impl;
+
+import com.bbasset.api.Autenticavel;
+import com.bbasset.api.Funcionario;
 
 public class FuncionarioImpl implements Funcionario {
     private String matricula;
@@ -45,7 +48,7 @@ public class FuncionarioImpl implements Funcionario {
     }
 
     @Override
-    public Funcionario setAutenticavel(boolean autenticavel) {
+    public Autenticavel setAutenticavel(boolean autenticavel) {
         this.autenticavel = autenticavel;
         return this;
     }

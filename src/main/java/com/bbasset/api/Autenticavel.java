@@ -1,8 +1,8 @@
-package com.bbasset;
+package com.bbasset.api;
 
 public interface Autenticavel {
     boolean autenticavel();
-    Funcionario setAutenticavel(boolean autenticavel);
+    Autenticavel setAutenticavel(boolean autenticavel);
 
     class Builder {
         boolean autenticavel;

@@ -1,4 +1,6 @@
-package com.bbasset;
+package com.bbasset.api;
+
+import com.bbasset.Gerente;
 
 public interface Funcionario extends Funcao, Autenticavel {
     String getMatricula();

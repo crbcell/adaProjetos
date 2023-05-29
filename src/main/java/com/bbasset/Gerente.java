@@ -1,6 +1,8 @@
 package com.bbasset;
 
-public class Gerente implements Funcionario{
+import com.bbasset.api.Funcionario;
+
+public class Gerente implements Funcionario {
     private String matricula;
     private String nome;
     private int codFuncao;
@@ -42,7 +44,7 @@ public class Gerente implements Funcionario{
 
     @Override
     public boolean autenticavel() {
-        return true;
+        return autenticvel;
     }
 
     @Override
