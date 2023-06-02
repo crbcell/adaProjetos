@@ -9,12 +9,17 @@ public class Gerente implements Funcionario {
     private boolean autenticvel;
 
     @Override
+    public int compareTo(Object o) {
+        return 0;
+    }
+
+    @Override
     public String getMatricula() {
         return matricula;
     }
 
     @Override
-    public Funcionario setMatricula(String matricula) {
+    public Gerente setMatricula(String matricula) {
         this.matricula = matricula;
         return this;
     }
@@ -25,7 +30,7 @@ public class Gerente implements Funcionario {
     }
 
     @Override
-    public Funcionario setNome(String nome) {
+    public Gerente setNome(String nome) {
         this.nome = nome;
         return this;
     }
@@ -37,7 +42,7 @@ public class Gerente implements Funcionario {
     }
 
     @Override
-    public Funcionario setCodFuncao(int codFuncao) {
+    public Gerente setCodFuncao(int codFuncao) {
         this.codFuncao = codFuncao;
         return this;
     }
@@ -48,7 +53,7 @@ public class Gerente implements Funcionario {
     }
 
     @Override
-    public Funcionario setAutenticavel(boolean autenticavel) {
+    public Gerente setAutenticavel(boolean autenticavel) {
         this.autenticvel = autenticavel;
         return this;
     }

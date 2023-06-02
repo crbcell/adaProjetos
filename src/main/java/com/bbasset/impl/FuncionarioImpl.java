@@ -10,6 +10,11 @@ public class FuncionarioImpl implements Funcionario {
     private boolean autenticavel;
 
     @Override
+    public int compareTo(Object o) {
+        return 0;
+    }
+
+    @Override
     public String getMatricula() {
         return matricula;
     }

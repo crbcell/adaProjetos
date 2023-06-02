@@ -1,6 +1,6 @@
 package com.bbasset.api;
 
-public interface Funcao{
+public interface Funcao<T> {
     int getCodFuncao();
-    Funcao setCodFuncao(int codFuncao);
+    T setCodFuncao(int codFuncao);
 }

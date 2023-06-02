@@ -1,14 +1,13 @@
 package com.bbasset.api;
 
 import com.bbasset.PessoaFisica;
-import sun.net.www.content.text.Generic;
 
-public interface Cliente extends Autenticavel{
+public interface Cliente<T> extends Autenticavel<T> {
     String getTipoCliente();
-    Cliente setTipoCliente(String tipoCliente);
+    T setTipoCliente(String tipoCliente);
 
     String getCodCliente();
-    Cliente setCodCliente(String codCliente);
+    T setCodCliente(String codCliente);
 
     class Builder {
         String tipoCliente;

@@ -2,20 +2,27 @@ package com.bbasset.api;
 
 import com.bbasset.Gerente;
 
-public interface Funcionario extends Funcao, Autenticavel {
+public interface Funcionario<T> extends Funcao<T>, Autenticavel<T>, Comparable {
+    @Override
+    int compareTo(Object o);
+
     String getMatricula();
 
-    Funcionario setMatricula(String matricula);
+    T setMatricula(String matricula);
 
     String getNome();
 
-    Funcionario setNome(String nome);
+    T setNome(String nome);
+
+    @Override
+    T setCodFuncao(int codFuncao);
 
     class Builder {
         String matricula;
         String nome;
 
-        public Builder() {
+        public <Z extends Funcionario> Z build(Class<Z> clz) {
+            return null;
         }
 
         public Builder matricula(String matricula) {

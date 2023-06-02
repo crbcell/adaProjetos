@@ -1,8 +1,8 @@
 package com.bbasset.api;
 
-public interface Autenticavel {
+public interface Autenticavel<T> {
     boolean autenticavel();
-    Autenticavel setAutenticavel(boolean autenticavel);
+    T setAutenticavel(boolean autenticavel);
 
     class Builder {
         boolean autenticavel;
