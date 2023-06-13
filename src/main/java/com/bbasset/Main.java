@@ -7,14 +7,14 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-       /* Funcionario gerente = (Gerente) new Funcionario.Builder<Funcionario>()
+       /* Funcionario gerente = new Funcionario.Builder<Funcionario>()
                 .matricula("F11111")
                 .nome("Jose")
                 .buildeGerente()
-                .setCodFuncao(152)
-                .setAutenticavel(false);
+                .setCodFuncao(152);
+                //.setAutenticavel(false);*/
 
-        System.out.println("BUILDER: Nome do Funcionario: " + gerente.getNome());
+        /*System.out.println("BUILDER: Nome do Funcionario: " + gerente.getNome());
         System.out.println("BUILDER: Matricula do Funcionario: " + gerente.getMatricula());
         System.out.println("BUILDER: Cod Funcao do Funcionario: " + gerente.getCodFuncao());
         System.out.println("BUILDER: Funcionário é autenticável: " + gerente.autenticavel());*/
@@ -32,8 +32,8 @@ public class Main {
 
         System.out.println("----------------------------------------------------------");
 
-        ArrayList<Funcionario> funcionarios = new ArrayList<>();
-        /*funcionarios.add(
+        /*ArrayList<Funcionario> funcionarios = new ArrayList<>();
+        funcionarios.add(
                 (Gerente) new Funcionario.Builder<Funcionario>().nome("Cristian")
                         .matricula("F11111").buildeGerente().setCodFuncao(111).setAutenticavel(false)
         );
@@ -42,10 +42,10 @@ public class Main {
                         .matricula("F2222").buildeGerente().setCodFuncao(111).setAutenticavel(false)
         );*/
 
-        for (Funcionario funcionario : funcionarios) {
+        /*for (Funcionario funcionario : funcionarios) {
 
             System.out.println(funcionario);
 
-        }
+        }*/
     }
 }

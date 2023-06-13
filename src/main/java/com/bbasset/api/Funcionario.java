@@ -17,7 +17,7 @@ public interface Funcionario<T> extends Funcao<T>, Autenticavel<T>, Comparable {
     @Override
     T setCodFuncao(int codFuncao);
 
-    class Builder {
+    class Builder<F> {
         String matricula;
         String nome;
 
@@ -25,11 +25,11 @@ public interface Funcionario<T> extends Funcao<T>, Autenticavel<T>, Comparable {
             return null;
         }
 
-        public Builder matricula(String matricula) {
+        public Builder<F> matricula(String matricula) {
             this.matricula = matricula;
             return this;
         }
-        public Builder nome(String nome) {
+        public Builder<F> nome(String nome) {
             this.nome = nome;
             return this;
         }
