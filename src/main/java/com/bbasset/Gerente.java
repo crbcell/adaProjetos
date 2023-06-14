@@ -1,17 +1,11 @@
 package com.bbasset;
 
-import com.bbasset.api.Funcionario;
+public class Gerente implements Funcionario<Gerente> {
 
-public class Gerente implements Funcionario {
     private String matricula;
     private String nome;
     private int codFuncao;
-    private boolean autenticvel;
-
-    @Override
-    public int compareTo(Object o) {
-        return 0;
-    }
+    private boolean autenticavel;
 
     @Override
     public String getMatricula() {
@@ -49,12 +43,13 @@ public class Gerente implements Funcionario {
 
     @Override
     public boolean autenticavel() {
-        return autenticvel;
+        return autenticavel;
     }
 
     @Override
     public Gerente setAutenticavel(boolean autenticavel) {
-        this.autenticvel = autenticavel;
+        this.autenticavel = autenticavel;
         return this;
     }
 }
+

@@ -1,6 +1,4 @@
-package com.bbasset.api;
-
-import com.bbasset.PessoaFisica;
+package com.bbasset;
 
 public interface Cliente<T> extends Autenticavel<T> {
     String getTipoCliente();

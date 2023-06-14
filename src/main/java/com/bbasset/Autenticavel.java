@@ -1,4 +1,4 @@
-package com.bbasset.api;
+package com.bbasset;
 
 public interface Autenticavel<T> {
     boolean autenticavel();

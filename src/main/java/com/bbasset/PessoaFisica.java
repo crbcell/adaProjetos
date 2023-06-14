@@ -1,8 +1,5 @@
 package com.bbasset;
 
-import com.bbasset.api.Autenticavel;
-import com.bbasset.api.Cliente;
-
 public class PessoaFisica implements Cliente {
     private String tipoCliente;
     private String codCliente;

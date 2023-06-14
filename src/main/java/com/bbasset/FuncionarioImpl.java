@@ -1,7 +1,4 @@
-package com.bbasset.impl;
-
-import com.bbasset.api.Autenticavel;
-import com.bbasset.api.Funcionario;
+package com.bbasset;
 
 public class FuncionarioImpl implements Funcionario {
     private String matricula;

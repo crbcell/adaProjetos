@@ -1,7 +1,4 @@
-package com.bbasset.impl;
-
-import com.bbasset.api.Autenticavel;
-import com.bbasset.api.Cliente;
+package com.bbasset;
 
 public class ClienteImpl implements Cliente {
 

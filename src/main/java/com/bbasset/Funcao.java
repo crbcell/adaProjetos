@@ -1,4 +1,4 @@
-package com.bbasset.api;
+package com.bbasset;
 
 public interface Funcao<T> {
     int getCodFuncao();
